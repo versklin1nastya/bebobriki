@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff6600;
+        }
+        .dashboard-link a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Запросить инвентарь</h1>
+      <div class="dashboard-link">
+          <a href="{{ url_for('user_dashboard') }}">Главная</a>
+        </div>
+    <form method="post">
+        <label for="item_id">Название:</label>
+         <select name="item_id" required>
+              {% for item in inventory %}
+                 <option value="{{ item.id }}">{{ item.name }}</option>
+              {% endfor %}
+           </select> <br>
+        <label for="quantity">Количество:</label>
+        <input type="number" name="quantity" required><br>
+         <button type="submit">Запросить инвентарь</button>
+    </form>
+    </div>
+</body>
+</html>

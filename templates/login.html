@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+     <style>
+        body {
+          font-family: sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          background-color: #f4f4f4;
+        }
+
+        .login-container {
+          background-color: white;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          width: calc(100% - 22px);
+          box-sizing: border-box;
+        }
+
+        button {
+          background-color: #FF5733;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin: 10px 0;
+        }
+
+        button:hover {
+            background-color: #FF8C00;
+        }
+
+        .error-message{
+            color: red;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+    <h2>Login</h2>
+    <form method="post">
+        <input type="text" name="username" placeholder="Логин" required><br>
+        <input type="password" name="password" placeholder="Пароль" required><br>
+        <button type="submit">Войти</button>
+    </form>
+     <p class="error-message">{{ error }}</p>
+        <button onclick="location.href='/register'">Зарегистрироваться</button>
+    </div>
+
+</body>
+</html>
