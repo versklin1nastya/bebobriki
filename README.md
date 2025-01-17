@@ -12,4 +12,4 @@ pip install -r requirements.txt
 export DATABASE_URL="postgresql://user:password@host:port/database_name"
 5)Скопируйте файлы конфигурации в соответствующие директории.
 
-ССЫЛКА НА ВИДЕОРОЛИК: https://rutube.ru/video/private/9e2973e43ec2a398682972b7b71fabe4/?p=fixpoAxtDngfmrlnfpiuxQ
+ССЫЛКА НА ВИДЕОРОЛИК: https://rutube.ru/video/private/0c6d313f33ae54ceecc075f06a80a9c0/?p=mQDZpHmar1hPPoCvgV0CcQ
