@@ -26,5 +26,5 @@ export DATABASE_URL="postgresql://user:password@host:port/database_name"
 
 5)Скопируйте файлы конфигурации в соответствующие директории.
 
-ССЫЛКА НА ВИДЕОРОЛИК: https://rutube.ru/video/private/0c6d313f33ae54ceecc075f06a80a9c0/?p=mQDZpHmar1hPPoCvgV0CcQ
+ССЫЛКА НА ВИДЕОРОЛИК: [https://rutube.ru/video/private/b95974946adba2ab6e0a620e7f2b0bf9/?p=A1cVbgFVxGDzVvkUO_lcyQ](https://rutube.ru/video/private/b95974946adba2ab6e0a620e7f2b0bf9/?p=A1cVbgFVxGDzVvkUO_lcyQ)
 -------------------
